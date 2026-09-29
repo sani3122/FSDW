@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Methods", "GET");
   res.setHeader("Content-Type", "text/plain; charset=utf-8");
 
-  const targetUrl = req.query.url || "https://embed.st/embed/delta/live_uefa-nations-league-league-c-gr-3_moldova-faroe-islands-live-streaming-539465184/1/playlist.m3u8";
+  const targetUrl = req.query.url || "https://embed.st/embed/delta/live_uefa-nations-league-league-c-gr-3_moldova-faroe-islands-live-streaming-539465184/1";
 
   try {
     const response = await fetch(targetUrl, {
